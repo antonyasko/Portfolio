@@ -1,0 +1,37 @@
+.navbar {
+  position: fixed;
+  margin-left: 707px;
+  margin-top: 71px; 
+}
+
+.button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 17px;
+  letter-spacing: 0px;
+  color: #9b7d08;
+  font-family: "Segoe WP";
+  text-align: center;
+  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+}
+
+.contact {
+  width: 147px;
+  height: 41px; 
+  float: right;
+}
+
+.services {
+  width: 132px;
+  height: 41px; 
+  float: right;
+  border-color: #dcb105;
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+
+.about_us {
+  width: 172;
+  height: 41px; 
+  float: right;
+}
