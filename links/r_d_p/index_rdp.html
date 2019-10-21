@@ -7,28 +7,34 @@
     <title>iFrame_rdp</title>
     <link rel="stylesheet" href="style_rdp.css">
   </head>
-
-  <script>
-    function changeWidth(newWidth) {
-      let elem = document.getElementById("id_iframe");
-      elem.style.width = newWidth;
-    }
-    </script>
-
   <body>
-
     <div class="wrapper">
-
       <button class="back"><a href="../../index.html"><p>Back</p></a></button>
-
-      <button onclick="changeWidth('375px');" class="mobile"><p>Mobile</p></button>
-
-      <button onclick="changeWidth('1440px');" class="desktop"><p>Desktop</p></button>
-
-      <div class="site"><iframe id="id_iframe" src="../../projects/repair design project/index.html" width="1440" height="100%"></iframe></div>
-
+      <button class="desktop"><p>Desktop</p></button>
+      <button class="mobile"><p>Mobile</p></button>
+      <div class="site">
+        <iframe id="id_iframe" src="../../projects/repair design project/index.html" width="100%" height="753" frameborder="0"></iframe>
+      </div>
     </div>
-
   </body>
-
-  </html>
+  <script>
+    let buttonDesk = document.querySelector('.desktop');
+    buttonDesk.addEventListener('click', function() {
+      let elemD = document.getElementsByClassName("desktop")[0];
+      elemD.style.display = 'none'; 
+      let elemM = document.getElementsByClassName("mobile")[0];
+      elemM.style.display = 'block'
+      let elem = document.getElementById("id_iframe");
+      elem.style.width = '1440px';
+    });
+    let buttonMob = document.querySelector('.mobile');
+    buttonMob.addEventListener('click', function() {
+      let elemM = document.getElementsByClassName("mobile")[0];
+      elemM.style.display = 'none'; 
+      let elemD = document.getElementsByClassName("desktop")[0];
+      elemD.style.display = 'block'
+      let elem = document.getElementById("id_iframe");
+      elem.style.width = '375px';
+    });
+  </script>
+</html>

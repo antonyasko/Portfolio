@@ -15,6 +15,9 @@
   margin: 0 auto;
 }
 
+iframe {
+  flex: 0 0 auto;
+}
 
 .back {
   position: absolute;
@@ -37,7 +40,6 @@
 .back a p {
   font-size: 18px;
   font-family: 'Times New Roman', Times, serif;
-  
 }
 
 .mobile {
@@ -61,7 +63,7 @@
 .desktop {
   position: absolute;
   margin-left: 50px;
-  margin-top: 250px;
+  margin-top: 200px;
   width: 100px;
   height: 35px;
   background: lightgrey;
@@ -76,19 +78,14 @@
   font-family: 'Times New Roman', Times, serif;
 }
 
-#id_iframe {
-  max-width: 1440px;
-  height: 1400px;
-}
-
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
   .mobile {
     display: none;
   }
-}
-
-@media (min-width: 356px) {
   .desktop {
     display: none;
   }
-} */
+  iframe {
+    width: 375px;
+  }
+}

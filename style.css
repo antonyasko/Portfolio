@@ -3,16 +3,14 @@
 }
 
 body {
-  background-color: lightpink;
+  background-color: white;
 }
 
 .wrapper_portfolio {
   max-width: 980px;
   margin: 0 auto;
-  background-color: lightgreen;
   display: flex;
   flex-direction: column;
-
 }
 
 .user {
@@ -28,7 +26,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue;
 }
 
 .photo_image {
@@ -41,10 +38,9 @@ body {
 .user_info {
   display: flex;
   margin: 20px;
+  margin-right: 10px;
   flex-direction: column;
-  background: chartreuse;
   width: 250px;
-  
 }
 
 .user_name {
@@ -80,6 +76,7 @@ body {
 
 .education .user_education {
   display: flex;
+  padding-left: 13px;
 }
 
 .education .user_education p {
@@ -111,7 +108,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 50px;
+  padding-left: 25px;
   margin: 10px auto;
   width: 330px;
 }
@@ -122,23 +119,16 @@ body {
 
 .wrapper_swiper {
   display: flex;
-  
-  /* min-height: 400px; */
 }
 
 .carousel {
-  /* position: absolute;
-  top: 50%;
-  left: 50%; */
   width: 100%;
   display: flex;
   justify-content: center;
   text-align: center;
-  /* transform: translate(-50%, -50%); */
 }
 
 .items-container {
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   position: relative;
@@ -227,7 +217,6 @@ body {
 .arrow.left {
   left: 100%;
 }
-
 
 .to-left {
   animation-name: left;
@@ -331,7 +320,6 @@ details[open]:last-child {
 summary {
   border-top: 3px solid black;
   border-bottom: 3px solid black;
-
   outline: none;
   cursor: pointer;
   padding: 16px 24px;
@@ -339,6 +327,7 @@ summary {
   position: relative;
   font-size: 15px;
 }
+
 summary:hover{
   background:#eeeeee;
 }
@@ -346,6 +335,7 @@ summary:hover{
 summary::-webkit-details-marker {
   display: none;
 }
+
 summary::after {
   font-family: 'Material Icons';
   color: #9e9e9e;
@@ -358,7 +348,4 @@ summary::after {
   bottom: 0;
   right: 0;
   width: 6%;
-}  
-
-
-
+}
